@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <div class="media center-block">
+        <a class="media-left midia-bottom" href="#">
+            <!--<img src="http://placehold.it/100x100" class="">-->
+            <img src="/public/images/d2g.png">
+        </a>
+
+        <div class="media-body">
+            <h1 class="media-heading">博客</h1>
+
+            <p>Thoughts, stories, and ideas</p>
+        </div>
+    </div>
+</div>
+
+<main>
+    <article>
+        <header>
+            <h2>Still Beta</h2>
+        </header>
+        <section>
+            <p>站点还在开发中，特别是博客部分（你已经发现了？）</p>
+
+            <p>先放上来收集些反馈。反馈方式？博客没有评论功能，未来也不会有。页面已留反馈渠道，找找看 .. 你能找到的。</p>
+
+            <p>接下去会优化网址目录，增加些有趣的模块，也会搞一下博客，目录用的是「express + bookshelf」，博客打算尝试下「koa + mongoose」。</p>
+        </section>
+        <footer>
+            <img src="/public/images/avatar.png" class="img-circle"/>
+            <time>2 December 2014</time>
+        </footer>
+    </article>
+
+    <article>
+        <header>
+            <h2>Hello World</h2>
+        </header>
+        <section>
+            <p>需要研究google analytics以及百度统计等工具，所以做了这个类似「极客的好123」的网址导航站点, <a href="/" target="_blank">「d2g.io」</a>，欢迎来访，欢迎反馈。
+            </p>
+        </section>
+        <footer>
+            <img src="/public/images/avatar.png" class="img-circle"/>
+            <time>1 December 2014</time>
+        </footer>
+    </article>
+</main>
+
+{% endblock %}

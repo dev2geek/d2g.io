@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" type="image/png" href="/public/images/d2g-300.png">
+    <link rel="apple-touch-icon" type="image/png" href="/public/images/d2g-300.png">
+
+    <!-- build:css(/) /public/css/app.css -->
+    <link href="/public/stylesheets/app.css" media="all" rel="stylesheet" type="text/css"/>
+    <!-- endbuild -->
+</head>
+
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">你正在使用的是一款 <strong>过时的</strong> 浏览器. 要获得更好的体验，请 <a href="http://browsehappy.com/">升级你的浏览器</a>.</p>
+<![endif]-->
+
+<div class="d2g-main">
+    <div class="container d2g-content">
+        {% block content %}
+        the content area
+        {% endblock %}
+    </div>
+</div>
+
+<footer class="d2g-footer">
+    <ul class="pull-right">
+        <li class="d2g-text-light">d2g.io is Powered by Node.js, Express, etc.</li>
+        <li><a href="/" title="d2g.io"><span class="glyphicon glyphicon-home d2g-primary-color"
+                                             aria-hidden="true"></span></a></li>
+        <li><a href="https://github.com/dev2geek/d2g.io" target="_blank" title="github源码">Github</a></li>
+        <li><a href="/blogs" target="_blank" title="官方博客">Blog</a></li>
+    </ul>
+
+</footer>
+
+
+<!-- build:js(/) /public/js/vendor.js -->
+<script src="/public/bower_components/jquery/dist/jquery.js"></script>
+<script src="/public/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbuild -->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57165022-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

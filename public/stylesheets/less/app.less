@@ -1,0 +1,138 @@
+//
+// d2g.io global style
+// --------------------------------------------------
+
+.d2g-main {
+  height: auto;
+  min-height: 100%;
+}
+
+.d2g-footer {
+  border-top: 1px solid #e7e7e7;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
+  padding: 15px;
+  color: rgba(0, 0, 0, 0.4);
+
+  li {
+    display: inline;
+    margin-left: 20px;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  a:hover, a:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.d2g-content {
+  padding-bottom: 3em;
+}
+
+.d2g-text-light {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.d2g-primary-color {
+  color: #ffcf18;
+}
+
+.jumbotron {
+
+  background-color: transparent;
+
+  .media-body {
+    vertical-align: middle;
+  }
+
+  .center-block {
+    display: table;
+    float: none;
+  }
+}
+
+main {
+  margin-bottom: 60px;
+
+  .d2g-notice {
+
+    display: block;
+    background-color: #f9f9f9;
+    //border-color: transparent;
+    text-align: center;
+    margin: 30px auto 60px;
+    padding: 15px;
+
+    label {
+      font-weight: 100;
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    .d2g-message {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  header {
+    margin: 0;
+
+    h2 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 25px;
+    }
+  }
+
+  article {
+    border-bottom: 1px dashed #e7e7e7;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    word-break: break-word;
+    padding-bottom: 4rem;
+    margin: 4rem auto;
+
+    width: 80%;
+    max-width: 710px;
+
+    section {
+      p {
+        font-size: 16px;
+        //color:rgb(58, 65, 69);
+        color:rgba(0, 0, 0, 0.5);
+        line-height: 30px;
+        letter-spacing: 0.02rem;
+        margin: 0 0 20px;
+      }
+    }
+
+    footer {
+      margin-top: 15px;
+
+      img {
+        width: 24px;
+      }
+
+      time {
+        display: inline-block;
+        margin-left: 8px;
+        padding-left: 12px;
+        border-left: #e7e7e7 1px solid;
+        color: rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+
+  }
+}
