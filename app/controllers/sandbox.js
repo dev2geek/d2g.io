@@ -18,3 +18,9 @@ router.get('/polymer', function(req, res) {
     title: '沙盒 - Polymer'
   });
 });
+
+router.get('/react', function(req, res) {
+  res.render('react.html', {
+    title: '沙盒 - React'
+  });
+});
